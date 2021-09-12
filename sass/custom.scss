@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+$font-family-base: 'Inter',
+sans-serif;
+
+$primary: rgb(170, 92, 219);
+$dark: hsl(233, 47%, 7%);
+$card-bg: hsl(244, 38%, 16%);
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.col-img {
+    background-color: $primary;
+}
+
+@include media-breakpoint-up(md) {
+    .container {
+        height: 100vh;
+    }
+
+    .card {
+        max-width: 1000px;
+        // max-height: 300px;
+    }
+
+}
+
+.card-img {
+    display: block;
+    mix-blend-mode: multiply;
+}
+
+.h5 {
+    font-weight: 700;
+}
+
+.text-companies {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    color: red;
+}
+
+.card-title {
+    font-weight: 700;
+}

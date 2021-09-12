@@ -1,0 +1,147 @@
+:root {
+    --Very-dark-blue: hsl(233, 47%, 7%);
+    --Dark-desaturated-blue: hsl(244, 38%, 16%);
+    --Soft-violet: hsl(277, 64%, 61%);
+    --White: hsl(0, 0%, 100%);
+    --Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Slightly-transparent-white-dos: hsla(0, 0%, 100%, 0.6);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--Very-dark-blue);
+    color: var(--White);
+}
+
+.container {
+    /* margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto; */
+    margin: 1em auto;
+    width: 90%;
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .cards {
+        height: 100vh;
+        align-items: center;
+    }
+}
+
+.card {
+    background-color: var(--Dark-desaturated-blue);
+    border-radius: 1em;
+    overflow: hidden;
+    max-width: 400px;
+}
+
+@media (min-width: 768px) {
+    .card {
+        display: flex;
+        max-width: 1000px;
+    }
+}
+
+.card-col-img {
+    background-image: url('../images/image-header-mobile.jpg');
+    background-color: var(--Soft-violet);
+
+    /* https://developer.mozilla.org/es/docs/Web/CSS/blend-mode */
+    background-blend-mode: multiply;
+
+
+    /* backdrop-filter: blur(10px); */
+
+
+    /* https://developer.mozilla.org/es/docs/Web/CSS/mix-blend-mode */
+    /* Aquí mezclamos los dos contenidos */
+    /* mix-blend-mode: multiply; */
+
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+
+@media (min-width: 768px) {
+    .card-col-img {
+        width: 400px;
+        order: 2;
+        flex: 1;
+        height: auto;
+    }
+
+    .card-col-body {
+        order: 1;
+        flex: 1;
+    }
+}
+
+.card-body {
+    /* padding-left: 1em;
+    padding-right: 1em; */
+    padding: 2em 2em;
+    text-align: center;
+}
+
+.card-title {
+    font-weight: 700;
+    padding-bottom: 1em;
+}
+
+.card-title-morado {
+    color: var(--Soft-violet);
+}
+
+.card-text {
+    color: var(--Slightly-transparent-white);
+}
+
+.footer-container {
+    padding-top: 1em;
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer-title {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 0.3em;
+}
+
+.footer-text {
+    margin-top: 0;
+    color: var(--Slightly-transparent-white-dos);
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: 1px;
+}

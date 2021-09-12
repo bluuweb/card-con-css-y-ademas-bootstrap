@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body class="bg-dark">
+    <main class="container my-5 my-md-0 vh-md-100 d-flex align-items-center justify-content-center">
+        <article class="card overflow-hidden border-0 rounded-3 flex-md-row align-items-center">
+            <div class="bg-primary order-md-2 flex-md-grow-1 w-100">
+                <picture>
+                    <source srcset="images/image-header-mobile.jpg" type="image/jpg" media="(max-width: 599px)" />
+                    <source srcset="images/image-header-desktop.jpg" type="image/jpg" media="(min-width: 600px)" />
+                    <img src="img/image-header-mobile.jpg" alt="" class="card-img" />
+                </picture>
+            </div>
+            <section class="order-md-1 flex-md-grow-1 w-100">
+                <div class="card-body text-center text-md-start text-white">
+                    <h1 class="card-title h2">
+                        Lorem <span class="text-primary">dolor</span> sit amet
+                        consectetur?
+                    </h1>
+                    <p class="text-secondary">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius hic
+                        cumque excepturi vitae iste voluptatum?
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h2 class="h5">10k +</h2>
+                            <p class="text-uppercase text-secondary text-companies">companies</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h2 class="h5">10k +</h2>
+                            <p class="text-uppercase text-secondary text-companies">companies</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h2 class="h5">10k +</h2>
+                            <p class="text-uppercase text-secondary text-companies">companies</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+</body>
+
+</html>
